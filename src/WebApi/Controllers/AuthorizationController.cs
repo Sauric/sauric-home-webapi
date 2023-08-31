@@ -23,6 +23,6 @@ public class TestAuthorizationController : ControllerBase
     public async Task<IActionResult> Get()
     {
         await Task.Yield();
-        return Ok($"Hello {HttpContext.User.Identity?.Name}!");
+        return Ok($"Hello to {HttpContext.User.Identity?.Name}!");
     }
 }
